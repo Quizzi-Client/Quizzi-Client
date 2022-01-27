@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
+import { Route } from './Router/router';
 import GamesList from './Components/GamesList';
-// import { ReactRouter } from './Router/router';
+import ReactRouter from './Router/router';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <BrowserRouter> */}
-        <GamesList/>
-    {/* </BrowserRouter> */}
+    <BrowserRouter>
+      <ReactRouter/>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
