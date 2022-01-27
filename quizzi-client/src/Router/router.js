@@ -4,7 +4,7 @@ import {Route, Routes} from 'react-router-dom';
 const ReactRouter = () => {
     return(
         <Routes>
-            <Route exact path="/" element={<IdeasList/>}/>
+            {/* <Route exact path="/" element={<IdeasList/>}/> */}
         </Routes>
     )
 }
